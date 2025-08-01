@@ -1,0 +1,11 @@
+<xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
+  <category name="OPENBOT TARGET" colour="#21c2f3ff" icon="target">
+    
+    <block type="has_target_data"></block>
+    
+    <block type="get_target_info">
+      <field name="PROPERTY">x</field>
+    </block>
+    
+  </category>
+</xml>
