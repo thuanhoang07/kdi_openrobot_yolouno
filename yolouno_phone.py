@@ -24,6 +24,18 @@ class OpenBotParser:
         self.img_width = 0
         self.img_height = 0
         self.has_target = False   # Flag để biết có target data không
+        
+    def read_stdin(self):
+        """Đọc dữ liệu từ stdin (có thể là UART hoặc giao thức khác)"""
+        try:
+            data = sys.stdin.read(1) if hasattr(sys.stdin, 'read') else input()
+            for ch in data:
+                self.process_char(ch)
+        except KeyboardInterrupt:
+            print("\nDừng chương trình...")
+        except Exception as e:
+            print("[ERROR] Exception in read_stdin:", e)
+            time.sleep(0.01)
 
     def parse_msg(self):
         """Xử lý message khi đã đầy đủ header + body"""
