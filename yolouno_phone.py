@@ -68,34 +68,41 @@ class OpenBotParser:
 
     def get_target_x(self):
         """Lấy tọa độ x của target"""
+        print("Lấy tọa độ x của target:", self.target_x)
         return self.target_x if self.has_target else None
     
     def get_target_y(self):
         """Lấy tọa độ y của target"""
+        print("Lấy tọa độ y của target:", self.target_y)
         return self.target_y if self.has_target else None
     
     def get_target_w(self):
         """Lấy chiều rộng của target"""
+        print("Lấy chiều rộng của target:", self.target_w)
         return self.target_w if self.has_target else None
     
     def get_target_h(self):
         """Lấy chiều cao của target"""
+        print("Lấy chiều cao của target:", self.target_h)
         return self.target_h if self.has_target else None
     
     def get_target_box(self):
         """Lấy toàn bộ bounding box (x, y, w, h)"""
+        print("Lấy bounding box của target:", (self.target_x, self.target_y, self.target_w, self.target_h))
         if self.has_target:
             return (self.target_x, self.target_y, self.target_w, self.target_h)
         return None
     
     def get_image_size(self):
         """Lấy kích thước ảnh (width, height)"""
+        print("Lấy kích thước ảnh:", (self.img_width, self.img_height))
         if self.has_target:
             return (self.img_width, self.img_height)
         return None
     
     def is_target_available(self):
         """Kiểm tra có target data không"""
+        print("Kiểm tra có target data:", self.has_target)
         return self.has_target
 
 # # --- Main Loop ---
