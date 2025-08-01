@@ -13,7 +13,7 @@ Blockly.Blocks['has_target_data'] = {
 };
 
 Blockly.Python['has_target_data'] = function(block) {
-  Blockly.Python.definitions_['import_openbot_parser'] = 'from openbot_parser import OpenBotParser';
+  Blockly.Python.definitions_['import_openbot_parser'] = 'from yolouno_phone import OpenBotParser';
   Blockly.Python.definitions_['create_openbot_parser'] = 'parser = OpenBotParser()';
   
   var code = 'parser.is_target_available()';
@@ -49,7 +49,7 @@ Blockly.Blocks['get_target_info'] = {
 Blockly.Python['get_target_info'] = function(block) {
   var property = block.getFieldValue('PROPERTY');
   
-  Blockly.Python.definitions_['import_openbot_parser'] = 'from openbot_parser import OpenBotParser';
+  Blockly.Python.definitions_['import_openbot_parser'] = 'from yolouno_phone import OpenBotParser';
   Blockly.Python.definitions_['create_openbot_parser'] = 'parser = OpenBotParser()';
   
   var code = 'parser.get_target_' + property + '()';
