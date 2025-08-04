@@ -1,8 +1,8 @@
-# ESP32 MicroPython - OpenBot Parser (Arduino Style) - Simple Fix
+# ESP32 MicroPython - OpenBot Parser
 import sys
 import time
 
-print("ESP32 OpenBot Parser - Arduino Style")
+print("Yolouno OpenBot Parser")
 print("Sẵn sàng nhận lệnh từ điện thoại...")
 print("-" * 60)
 
