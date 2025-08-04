@@ -107,25 +107,25 @@ class OpenBotParser:
     def get_target_x(self):
         """Lấy tọa độ x của target"""
         self.read_stdin()
-        print("Lấy tọa độ x của target:", self.target_x)
+        # print("Lấy tọa độ x của target:", self.target_x)
         return self.target_x if self.has_target else None
     
     def get_target_y(self):
         """Lấy tọa độ y của target"""
         self.read_stdin()
-        print("Lấy tọa độ y của target:", self.target_y)
+        # print("Lấy tọa độ y của target:", self.target_y)
         return self.target_y if self.has_target else None
     
     def get_target_w(self):
         """Lấy chiều rộng của target"""
         self.read_stdin()
-        print("Lấy chiều rộng của target:", self.target_w)
+        # print("Lấy chiều rộng của target:", self.target_w)
         return self.target_w if self.has_target else None
     
     def get_target_h(self):
         """Lấy chiều cao của target"""
         self.read_stdin()
-        print("Lấy chiều cao của target:", self.target_h)
+        # print("Lấy chiều cao của target:", self.target_h)
         return self.target_h if self.has_target else None
     
     def get_target_box(self):
