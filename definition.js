@@ -5,7 +5,7 @@ Blockly.Blocks['has_target_data'] = {
       type: "has_target_data",
       message0: "Có target data không",
       output: "Boolean",
-      colour: "#45ff4eff",
+      colour: "#cb2026",
       tooltip: "Kiểm tra xem có dữ liệu target từ OpenBot hay không",
       helpUrl: ""
     });
