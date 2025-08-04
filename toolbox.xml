@@ -1,5 +1,5 @@
 <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
-  <category name="OPENBOT" colour="#45ff4eff" icon="camera">
+  <category name="OPENBOT" colour="#cb2026" icon="camera">
     
     <!-- <block type="read_openbot_data"></block> -->
 
