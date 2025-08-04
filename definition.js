@@ -5,7 +5,7 @@ Blockly.Blocks['has_target_data'] = {
       type: "has_target_data",
       message0: "Có target data không",
       output: "Boolean",
-      colour: "#21c2f3ff",
+      colour: "#45ff4eff",
       tooltip: "Kiểm tra xem có dữ liệu target từ OpenBot hay không",
       helpUrl: ""
     });
@@ -25,22 +25,22 @@ Blockly.Blocks['get_target_info'] = {
   init: function () {
     this.jsonInit({
       type: "get_target_info",
-      message0: "Lấy %1 của target",
+      message0: "Lấy %1 của vật thể",
       args0: [
         {
           type: "field_dropdown",
           name: "PROPERTY",
           options: [
-            ["x trung tâm", "x"],
-            ["y trung tâm", "y"],
-            ["chiều rộng w", "w"],
-            ["chiều cao h", "h"]
+            ["x", "x"],
+            ["y", "y"],
+            ["w", "w"],
+            ["h", "h"]
           ]
         }
       ],
       output: "Number",
-      colour: "#21c2f3ff",
-      tooltip: "Lấy thông tin target từ OpenBot (x,y là tọa độ trung tâm)",
+      colour: "#45ff4eff",
+      tooltip: "x,y là tọa độ trung tâm, w là chiều rộng, h là chiều cao",
       helpUrl: ""
     });
   }
@@ -64,7 +64,7 @@ Blockly.Blocks['read_openbot_data'] = {
      message0: "Đọc dữ liệu OpenBot",
      previousStatement: null,
      nextStatement: null,
-     colour: "#2196F3",
+     colour: "#45ff4eff",
      tooltip: "Đọc dữ liệu từ stdin và xử lý tin nhắn OpenBot",
      helpUrl: ""
    });
