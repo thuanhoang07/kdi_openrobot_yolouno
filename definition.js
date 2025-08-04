@@ -39,7 +39,7 @@ Blockly.Blocks['get_target_info'] = {
         }
       ],
       output: "Number",
-      colour: "#45ff4eff",
+      colour: "#cb2026",
       tooltip: "x,y là tọa độ trung tâm, w là chiều rộng, h là chiều cao",
       helpUrl: ""
     });
@@ -64,7 +64,7 @@ Blockly.Blocks['read_openbot_data'] = {
      message0: "Đọc dữ liệu OpenBot",
      previousStatement: null,
      nextStatement: null,
-     colour: "#45ff4eff",
+     colour: "#cb2026",
      tooltip: "Đọc dữ liệu từ stdin và xử lý tin nhắn OpenBot",
      helpUrl: ""
    });
